@@ -1,0 +1,2453 @@
+@charset "utf-8";
+html,body {
+    font-size: 100%;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    width: 1365px;
+    max-width: 1365px;
+    margin: 0;
+   
+
+    
+
+}
+
+#loader {
+    background: #000;    
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    margin: 300px auto;
+    border-bottom: solid 1px #fff;
+    border-radius: 100%;
+    animation: spinner-anime 1.1s infinite linear;
+}
+
+@keyframes spinner-anime {
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    
+
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+ 
+
+
+.container {
+    width: 1365px;
+    height: auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    
+    
+    
+    
+
+ }
+
+ img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*-----header-------*/
+ #header {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    left: 5px;
+    z-index: 50;
+
+    
+}
+
+
+ul {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+ul :hover {
+    border-bottom: solid 1px black;
+}
+
+li {
+    list-style: none;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+
+.BLOG {
+    border: solid 1px black;
+    width: 45px;
+    padding: 0;
+    text-align: center;
+    margin-left: 30ptex;
+}
+
+.BLOG a {
+    text-decoration: none;
+}
+.BLOG:hover {
+    color: #fff;
+    background: #000;
+}
+
+
+
+/*-----mv----------*/
+#mv {
+    width: 100%;
+    padding: 0;
+    
+    
+}
+
+.mv {
+    position: relative;    
+}
+
+.mv .logo {
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    z-index: 999;
+    display: none;
+    
+    
+}
+    
+#mv .mv-item {
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 30;
+}
+
+#mv .mv-item img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+}
+
+
+.scroll {
+    width: 75px;
+    position: relative;
+    left: 665px;
+    top: 715px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 40;
+    color: #fff;
+}
+
+.scroll-text {
+    color: #fff;
+    font-size: 18px;
+}
+
+.scrollanime {
+    height: auto;
+    width: 120px;
+    opacity: 0;
+    position: fixed;
+    z-index: 60;
+    top: 520px;
+    left: 1190px;
+    
+    
+}
+
+.fadeIn  {
+    height: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        
+        
+    }
+    100% {
+        opacity: 1;
+        
+        
+    }
+}
+
+
+
+
+
+
+.scroll-up img {
+    width: 100px;
+}
+
+.background {
+    max-width: 1365px;
+    display: block;
+    width: 880px;
+    height: 4000px;
+    background: #000;
+    opacity: 0.8;
+    transform: rotate(47deg);
+    position: relative;
+    top: -150px;
+    left: 47%;
+    z-index: 10;
+       
+}
+
+/*---concept--------*/
+
+#CONCEPT {
+    width: 1160px;
+    padding: 0 8%;
+    position: relative;
+    top: -3200px;
+}
+
+.concept-item {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    top: 0;
+
+}
+
+.sec-title {
+    font-size: 42px;
+    position: relative;
+    left: 15%;
+    bottom: 100px;
+    z-index: 100;
+
+}
+
+.concept-item img {
+    width: 290px;
+    position: relative;
+    left: 25%;
+    z-index: 20;
+    
+}
+
+.item {
+    width: 1160px;
+    position: relative;
+
+}
+
+.item img {
+    width: 100%;
+    height: 620px;
+    position: relative;
+    top: 230px;
+    z-index: 20;
+}
+
+.item .border {
+    width: 8%;
+    border-bottom: solid 1px black;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 30;
+    top: 230px;
+    left: 580px;
+    mix-blend-mode: color;
+
+}
+
+.concept-back {
+    display: none;
+}
+.text {
+    font-family: "游ゴシック","游ゴシック体";
+    background-color: #fff;
+    width: 408px;
+    height: 412px;
+    position: absolute;
+    top: 55%;
+    right: 0;
+    z-index: 30;
+    margin-right: 0;
+    padding: 0;
+}
+
+.text1 {
+    font-size: 19px;
+    width: 100%;
+    padding: 50px 50px 10px 30px;
+}
+
+.text2 {
+    font-size: 14px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.text2-en {
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+.text3 {
+    width: 100%;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.text3-en {
+    font-size: 14px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.text4 {
+    width: 365px;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.text4-en {
+    width: 368px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+
+
+/*----HAIR SALON-----*/
+
+#HAIR-SALON {
+    width: 1160px;
+    padding: 0 8%;
+    position: relative;
+    top: -3200px;
+}
+
+
+.hair-salon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+    height: 300px;
+    position: relative;
+    
+}
+
+.sec-title2 {
+    width: 300px;
+    font-size: 42px;
+    color: #d0d0d0;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    z-index: 10;
+    
+}
+.hair-salon-item img {
+    width: 290px;
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
+    z-index: 10;
+}
+
+.hair-salon-item .border2 {
+    width: 8%;
+    border-bottom: solid 1px black;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+    z-index: 50;
+}
+
+.salon-img {
+    width: 1160px;
+    position: relative;
+    top: 30px;
+    z-index: 30;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.salon-img img {
+    width: 100%;
+    padding-bottom: 0;
+    
+    
+}
+
+.back {
+    width: 1160px;
+    height: 1000px;
+    background-color: #d0d0d0;
+    padding-top: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 850px;
+    z-index: 20;
+}
+
+
+.slide-dots {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.slide-dots li {
+    display: inline-block;
+    margin: 0 2px;
+    border: none;
+}
+
+
+
+.slide-dots li button {
+    position: relative;
+    text-indent: -9999px;
+}
+
+
+
+
+.slide-dots li button::before {
+    background-image: url(../img/dots-img.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    content: "";
+    cursor: pointer;
+    height: 20px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+
+.slide-dots li.slick-active button::before {
+    background-image: url(../img/dots-img-2.png);
+    position: absolute;
+    top: 3px;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+
+
+
+ /*-----women--------*/
+.women {
+    width: 1040px;
+    height: 460px;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    position: absolute;
+    top: 1010px;
+    left: 170px;
+    z-index: 30;
+
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1040px;
+    height: auto;
+}
+
+.women-logo {
+    font-size: 32px;
+    width: 150px;
+    height: 34px;
+    font-weight: bold;
+    padding: 215px 220px 205px 185px;
+}
+
+
+
+
+dl {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-weight: 400;
+    padding-left: 180px;
+    align-items: end;
+    line-height: 16px;
+
+
+}
+
+dt {
+    width: 190px;
+    
+}
+
+dd {
+    width: 210px;
+
+}
+
+
+.dd1 {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.women-text {
+    width: 500px;
+    margin: 0 0 0 auto;
+    text-align: justify;
+    padding-left: 60px;
+    position: absolute;
+    top: 330px;
+    left: 550px;
+    
+}
+.women-text p {
+    font-size: 12px;
+    font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;;
+    opacity: 0.8;
+    padding-right: 40px;
+    margin-top: 0;
+    padding-top: 0;
+
+}
+
+
+/*------men---------*/
+.men {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    z-index: 30;
+    top: 1480px;
+    left: 170px;
+
+}
+
+.men-inner {
+    width: 1040px;
+    height: 290px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.men-logo {
+    font-family: 'Lato', sans-serif;
+    font-size:32px;
+    padding: 130px 170px 130px 220px;
+}
+
+
+dt {
+    width: 150px;
+}
+
+dd {
+    width: 215px;
+}
+
+.men-dd {
+    padding-left: 50px;
+}
+
+.men-text  {
+    width: 460px;
+    height: 80px;
+    position: absolute;
+    z-index: 30;
+    top: 1780px;
+    left: 800px;
+    opacity: 0.6;
+    font-size: 10px;
+    padding-right: 0;
+}
+
+.men-text p {
+    font-size: 12px;
+    font-family: YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+    opacity: 0.8;
+}
+
+.background2 {
+    max-width: 1365px;
+    display: block;
+    width: 780px;
+    height: 4000px;
+    background: #000;
+    opacity: 0.8;
+    transform: rotate(-47deg);
+    position: relative;
+    top: -2800px;
+    left: 47%;
+    z-index: 10;
+}
+
+
+/*---------SELF REMOVAL-------*/
+#SELF-REMOVAL {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    top: -5500px;
+    left: 100px;
+    z-index: 50;
+    margin-top: -800px;
+}
+
+.self-removal {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+
+}
+
+.sec-title3 {
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    z-index: 30;
+    font-weight: 400;
+}
+
+.self-removal img {
+    width: 302px;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    z-index: 10;
+}
+
+.self-removal .border3 {
+    width: 8%;
+    border-bottom: solid 1px black;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 30;
+    top: 310px;
+    left: 45%;
+}
+
+.back2 {
+    width: 1160px;
+    height: 1105px;
+    position: absolute;
+    top: 320px;
+    z-index: 20;
+    background-color: #d0d0d0;
+
+}
+.self-removal-text {
+    width: 1135px;
+    height: 400px;
+    font-size: 14px;
+    font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+    text-align: center;
+    position: absolute;
+    z-index: 30;
+}
+
+.removal1 {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.removal2 {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.removal3 {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.removal4 {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.removal5 {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.self-removal-item {
+    width: 1045px;
+    height: 505px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 500px;
+    left: 50px;
+    z-index: 30;
+    padding: 30px;
+}
+
+.removal-img {
+    width: 400px;
+}
+
+.removal-list {
+    font-family:'Lato', sans-serif ;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.self-removal-text-en {
+    width: 200px;
+    height: 65px;
+    font-size: 12px;
+    color: #7f7f7f;
+    font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+    position: absolute;
+    top: 1200px;
+    left: 640px;
+    z-index: 30;
+    
+}
+
+/*----cafe-------*/
+#cafe {
+    width: 1160px;
+    padding: 0 8%;
+    position: relative;
+    top: -4800px;
+    z-index: 30;
+}
+
+.cafe {
+    width: 1135px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    
+}
+
+.sec-title4 {
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 130px;
+    left: 450px;
+
+}
+
+.cafe img {
+    width: 302px;
+    
+}
+
+.cafe-item {
+    width: 1160px;
+   
+}
+
+.cafe-item img {
+    width: 1160px;
+    
+}
+
+.cafe .border4 {
+    width: 8%;
+    border-bottom: solid 1px black;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 50;
+    top: 230px;
+    left: 450px;
+    mix-blend-mode: color;
+}
+
+.back3 {
+    width: 1160px;
+    height: 300px;
+    position: relative;
+    z-index: 30;
+    top: -30px;
+    background-color: #d0d0d0;
+}
+
+.cafe-text {
+    width: 1040px;
+    height: 130px;
+    background-color: #fff;
+    position: relative;
+    z-index: 40;
+    top: -250px;
+    left: 50px;
+}
+
+.cafe-text-en {
+    padding-top: 20px;
+}
+
+.cafe-text p {
+    width: 100%;
+    font-size: 14px;
+    font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+    text-align: center;
+}
+
+.background3 {
+    max-width: 1365px;
+    display: block;
+    width: 580px;
+    height: 400px;
+    background: #000;
+    opacity: 0.75;
+    transform: rotate(-47deg);
+    position: relative;
+    top: -360px;
+    left: 105%;
+    z-index: 1;
+}
+/*-----NEWS---------*/
+
+#NEWS {
+    width: 1365px;
+    height: 625px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    position: relative;
+    top: -5300px;
+    z-index: 50;
+    background-color: #232323;
+    opacity: 1.0;
+    
+}
+    
+
+.news {
+    font-size: 34px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    z-index: 60;
+    
+    
+    
+}
+
+.news-title {
+    display: flex;
+    
+}
+
+.news-title img {
+    width: 110px;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    z-index: 50;
+    opacity: 1.0;
+    color: black;
+
+    
+}
+
+.news-inner {
+    width:80%;
+    height: 280px;
+    position: relative;
+    top: 150px;
+    left: 70px;
+
+   
+}
+
+.news-content1 {
+    display: flex;
+    width: 1000px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+.news-content2 {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+
+}
+
+
+.news-item{
+    display: flex;
+    
+}
+
+.news-item img {
+    width: 120px;
+    height: 120px;
+}
+.news-item p {
+    color: #fff;
+    width: 280px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+}
+
+.news-text .days {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+.READ-MORE {
+    width: 260px;
+    height: 55px;
+    position: absolute;
+    z-index: 40;
+    top: 480px;
+    right: 560px;
+    background-color: #fff;
+    
+}
+
+.READ-MORE:hover {
+    color: #fff;
+    background-color: #000;
+    border: solid 1px #fff;
+    transition: 0.5s;
+}
+
+/*-------shop information-------------*/
+
+.map {
+    width: 1365px;
+    height: 605px;
+    position: relative;
+    top: 0;
+    z-index: 20;
+}
+
+#shop-information {
+    width: 1365px;
+    height: 605px;
+    max-width: 1365px;
+    position: relative;
+    top: -5300px;
+    border: solid 1px black;
+}
+
+.information-content {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    z-index: 70;
+    width: 410px;
+    text-align: justify;
+}
+
+.information-logo {
+    width: 120px;
+    position: absolute;
+    top: -30px;
+    left: 280px;
+}
+
+.information-inner {
+    width: 410px;
+    height: 510px;
+    background-color: #fff;
+    
+    padding-top: 57px;
+    padding-left: 40px;
+}
+
+
+.shop-information {
+    font-size: 34px;
+}
+
+
+.SIGNS-PLUS {
+    font-size: 17px;
+    font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.shop-information {
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.information-text {
+    font-size: 14px;
+    font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+    padding-bottom: 10px;
+}
+
+.information-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.information-list dl {
+    width: 100%;
+    height: 45px;
+    padding-left: 0;
+    text-align: justify;
+
+}
+
+.information-list dt {
+    width: 60px;
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.information-list dd {
+    width: 307px;
+    font-size: 14px;
+    font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+
+}
+
+.official-blog {
+    width: 90%;
+    height: 55px;
+    border: solid 1px black;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    top: 130px;
+    color: #fff;
+    background-color: #000;
+    
+}
+
+
+.official-blog:hover {
+    color: #000;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+/*----footer-------*/
+
+#footer {
+    width: 1365px;
+    height: 305px;
+    border: solid 1px black;
+    position: relative;
+    top: -5300px;
+    background-color: #000;
+    text-align: center;
+    margin-bottom: -5300px;
+}
+
+.footer-item img {
+    width: 165px;
+    margin-top: 60px;
+    
+}
+
+
+
+.sns-icon {
+    filter: grayscale(100%);
+}
+
+.sns-icon .facebook {
+    width: 15px;
+}
+
+.sns-icon .instagram {
+    width: 30px;
+}
+
+.sns-icon .line {
+    width: 35px;
+}
+
+.footer-item p {
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Lato', sans-serif ;
+    margin-top: 50px;
+}
+
+
+/*-----SP-------*/
+@media screen and (max-width:768px) {
+    html,body {
+        font-size: 14px;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin-right: 0;
+        
+        
+
+    }
+
+    .container {
+        overflow: visible;
+        width: 100%;
+        height: auto;
+        
+    
+        
+        
+        
+        
+
+        
+        
+        
+    }
+
+    .container .background {
+        display: none;
+    }
+
+    
+
+    header #header {
+        width: 100%;
+        height: 0;
+        position: relative;
+        
+    }
+    
+    .scroll {
+        display: none;
+    }
+
+    .scroll-text {
+        display: none;
+    }
+    
+    .burger-menu {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 20px;
+        left: auto;
+        right: 30px;
+        z-index: 999;
+        
+        
+        
+    }
+    
+    .burger-menu span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #000;
+        background: #000;
+        position: absolute;
+        transition: all 0.5s;
+        
+    }
+
+
+    .open .burger-menu span {
+        background-color: #fff;
+    }
+
+    .burger-nav  {
+        color: #fff;
+        position: fixed;
+        z-index: 30;
+        top: 0;
+        left: auto;
+        right: 40px;
+        opacity: 0;
+        transition: all 0.6s;
+        
+        
+        
+    }
+
+    .burger-nav ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 150px;
+        right: 50px;
+    
+    }
+
+    .burger-nav li {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .burger-nav .BLOG {
+        border: solid 1px #fff;
+        margin: 20px auto;
+    }
+
+    .burger-nav a {
+        color: #fff;
+        
+    }
+
+    .open .burger-nav  {
+        opacity: 1;
+        color: #fff;
+    }
+    .burger-menu span:nth-child(1) {
+        top: 6px;
+    }
+
+    .burger-menu span:nth-child(2) {
+        top: 14px;
+    }
+
+    .burger-menu span:nth-child(3) {
+        bottom: 6px;
+    }
+
+    .open .burger-menu span:nth-child(1) {
+        transform: translateY(8px) rotate(-45deg);
+
+    }
+
+    .open .burger-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .open .burger-menu span:nth-child(3) {
+        transform: translateY(-8px) rotate(45deg);
+    }
+
+    .mask {
+        position: fixed;
+        top: 0;
+        right: -500px;
+        opacity: 0;
+        transition: .6s;
+    }
+
+    .open .mask {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 30%;
+        height: 100%;
+        background-color: #000;
+        opacity: 1;
+
+    }
+    #mv{
+        width: 100%;
+        position: relative;
+        
+        
+        
+    }
+
+    .mv {
+        width: 100%;
+    }
+
+    .mv .logo {
+        width: 25%;
+        position: absolute;
+        top: 245px;
+        left: 40%;
+        z-index: 40;
+        
+    
+        
+        
+    }
+
+    #mv .mv-item  {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+        
+
+    #mv .mv-item img {
+        width: 100%;
+        height: 768px;
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        padding: 0;
+
+    }
+    
+    /*---CONCEPT-----*/
+    #CONCEPT {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 750px;
+        
+        
+        
+
+    }
+
+    .concept-item {
+        width: 100%;
+        height: 120px;
+        position: relative;
+        top: 0;
+        z-index: 60;
+        
+    }
+    .concept-item .sec-title {
+        font-size: 21px;
+        font-family: "Oswald, sans-serif";
+        position: absolute;
+        font-style: normal;
+        font-weight: 400;
+        top: 90px;
+        left: 45%;
+        z-index: 50;
+        
+    }
+
+    .concept-item img {
+        width: 15%;
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: 40px;
+        z-index: 50;
+        padding: 0;
+        
+        
+    }
+
+    .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+
+    .item img {
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        z-index: 60;
+    }
+
+    .item .border {
+        width: 50px;
+        position: absolute;
+        z-index: 40;
+        top: 20px;
+        left: 50%;
+    }
+
+    .concept-back {
+        display: block;
+        width: 100%;
+        height: 384px;
+        background-color: #d0d0d0;
+        position: absolute;
+        top: 270px;
+        z-index: 20;
+        padding: 30px;
+    }
+
+    .item {
+        width: 100%;
+    }
+    .item .text {
+        width: 90%;
+        height: 300px;
+        position: absolute;
+        z-index: 40;
+        top: 320px;
+        left: 5%;
+        
+    }
+
+    .item .text .text1 {
+        width: 90%;
+        font-size: 100%;
+        
+    }
+
+    .item .text,.text2,.text2-en,.text3,.text3-en,.text4,.text4-en {
+        font-size: 90%;
+        width: 90%;
+        
+
+    }
+
+   .container .background2 {
+    display: none;
+    
+   }
+/*-----HAIR SALON----*/
+    
+    #HAIR-SALON {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 1395px;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        
+        
+        
+        
+        
+    
+    }
+
+    #HAIR-SALON .hair-salon-item {
+        width: 100%;
+        height: 140px;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 0;
+        
+        position: relative;
+        top: 0;
+        left: 0;
+               
+        
+    }
+
+    .hair-salon-item img {
+        width: 16%;
+        position: absolute;
+        top: 42px;
+        left: 0;
+        padding-left: 0;
+        
+        
+        
+    }
+
+    .sec-title2 {
+        font-size: 21px;
+        font-family: "Oswald, sans-serif";
+        color: #000;
+        position: absolute;
+        top: 60px;
+        left: 40%;
+        width: 40%;
+    }
+
+    .hair-salon-item .border2 {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        left: 52%;
+    }
+
+    #HAIR-SALON .salon-img {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        top: 0;
+        left: 0;
+        
+
+    
+    }
+ 
+    #HAIR-SALON .salon-img img {
+        width: 100%;
+        height: 250px;
+        padding-left: 0;
+    
+    }
+
+    .back {
+        width: 100%;
+        height: 700px;
+        position: relative;
+        top: -30px;
+        left: 0;
+        z-index: 10;
+        
+    }
+
+    .women {
+        width: 90%;
+    
+        height: 335px;
+        position: relative;
+        top: -675px;
+        left:  5%;
+        right: 0;
+        padding: 0;
+        margin-right: 0;
+        overflow-x: hidden;
+        
+        
+    }
+
+    
+    .women .inner {
+        width: 100%;
+        height: 330px;
+        flex-direction:column;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        background-color: #fff;
+        display: flex;
+        
+
+    }
+
+    
+    
+    .women-logo {
+        font-size: 110%;
+        width: 11%;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    
+    .inner dl {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+        margin-top: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 20px;
+        margin-bottom: 80px;
+    
+        
+        
+    }
+    
+    .inner dt {
+        width: 20%;
+        font-size: 95%;
+        padding-bottom: 0;
+        
+        
+        
+        
+        
+        
+    }
+    .inner dd {
+        width: 80%;
+        font-size: 95%;
+        text-align: right;
+        
+        
+
+        
+    }
+    
+    .women-text {
+        width: 80%;
+        height: 40px;
+        font-size: 100%;
+        position: absolute;
+        top: 700px;
+        left: 12%;
+        z-index: 30;
+        padding: 0;
+        font-size: 10px;
+        
+       
+    }
+
+    .women-text p {
+        padding: 0;
+        margin: 0;
+        font-size: 2.5%;
+        
+    }
+    
+    .men {
+        width: 90%;
+        height: 205px;
+        position: relative;
+        z-index: 20;
+        top: -668px;
+        left: 5%;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        
+    
+    }
+
+    
+    .men-inner {
+        background-color: #fff;
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    } 
+
+    .men-logo {
+        font-size: 110%;
+        width: 6%;
+        padding: 0;
+        margin-top: 20px;
+        
+    }
+
+
+    .men-list {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+        margin-top: 0;
+        padding: 0 20px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .men-list dt {
+        width: 30%;
+        font-size: 95%;
+        padding-bottom: 0;
+    }
+
+    .men-list dd {
+        width: 70%;
+        font-size: 95%;
+        text-align: right;
+        
+    }
+
+    .men-text {
+        font-size: 100%;
+        position: absolute;
+        top: 1000px;
+        left: 10%;
+        width: 70%;
+    
+        
+        
+        
+    }
+
+    .men-text p {
+        font-size: 2.5%;
+        opacity: 0.6;
+    }
+
+    
+    span .background2 {
+        display: none;
+    }
+
+    
+    /*----SELF REMOVAL---*/
+    #SELF-REMOVAL {
+       width: 100%;
+       height: auto;
+       position: relative;
+       top: 1675px;
+       left: 0;
+       right: 0;
+       z-index: 20;
+       box-sizing: border-box;
+       
+       
+    
+    }
+
+    .self-removal {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        z-index: 20;
+        
+        
+    }
+
+    .self-removal img {
+        width: 16%;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 20;
+        
+        
+    }
+
+    .sec-title3 {
+        font-size: 150%;
+        position: absolute;
+        top: 80px;
+        
+    }
+
+    .self-removal .border3 {
+        width: 60px;
+        position: absolute;
+        top: 130px;
+        z-index: 30;
+    }
+    #SELF-REMOVAL .back2 {
+        width: 100%;
+        height: 1500px;
+        padding: 0;
+        position: relative;
+        top: 150px;
+        left: 0;
+        z-index: 30;
+        
+    }
+
+    .self-removal-text {
+        width: 96%;
+        text-align: left;
+        position: absolute;
+        top: 140px;
+        left: 3%;
+        z-index: 40;
+        margin-right: 0;
+        padding-right: 0;
+        
+        
+        
+
+    }
+
+    
+    .removal1 {
+        width: 60%;
+    }
+
+    .removal1 p {
+        width: 70%;
+
+    }
+    .removal2 {
+        width: 65%;
+        
+
+    }
+
+    .removal2 p {
+        width: 94%;
+        
+    }
+
+    .removal3 {
+        width: 90%;
+        
+    }
+
+    .removal3 p {
+        width: 70%;
+    }
+
+    .removal4 {
+        width: 64%;
+    }
+
+    .removal4 p {
+        width: 96%;
+    }
+
+    .removal5 {
+        width: 40%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .removal5 p {
+        width: 75%;
+    }
+
+
+    .self-removal-text p {
+        padding: 0;
+        margin: 0;
+        font-size: 80%;
+        color: #000;
+        opacity: 1.0;
+        
+       
+    
+    }
+
+    .self-removal-item {
+        width: 95%;
+        height: 68%;
+        flex-direction: column;
+        margin-right: 0;
+        padding-right: 0;
+        position: absolute;
+        z-index: 30;
+        top: 40%;
+        left: 2.5%;
+    
+        
+
+    }
+
+    .self-removal-item .removal-img {
+        
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .removal-img img {
+        width: 90%;
+        position: absolute;
+        top: 100px;
+        left: 5%;
+        
+    }
+
+    .removal-list {
+        font-size: 100%;
+        position: absolute;
+        top: 750px;
+        left: 7%;
+        width: 90%;
+        
+    }
+
+    .removal-list dl {
+        width: 94%;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+        padding-left: 0;
+    
+        
+    }    
+
+    .removal-list dt {
+        width: 50%;
+        
+    }
+
+    .removal-list dd{
+        width: 50%;
+        text-align: right;
+        
+        
+    }
+    
+    .self-removal-text-en {
+        width: 30%;
+        font-size: 85%;
+        position: absolute;
+        top: 98%;
+        left: 9%;
+    
+        
+    }
+
+    .self-removal-text-en p {
+        padding-bottom: 10px;
+        
+    }
+    
+    /*-------cafe-------*/
+    #cafe {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        position: relative;
+        top: 1950px;
+        padding: 0;
+        z-index: 30;
+        
+        
+        
+        
+    }
+
+    .cafe {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        top: -160px;
+        left: 0;
+    
+    }
+
+    .cafe img {
+        width: 16%;
+        position: absolute;
+        top: 50px;
+        z-index: 10;
+        left: 0;
+        
+        
+    }
+
+    .sec-title4 {
+        font-size: 150%;
+        position: absolute;
+        top: 80px;
+        left: 46%;
+        
+        
+    }
+
+    .cafe .border4 {
+        width: 50px;
+        position: absolute;
+        top: 140px;
+        left: 46%;
+    }
+    
+    .cafe-item {
+        width: 100%;
+        height: 255px;
+        padding: 0;
+        position: relative;
+        top: -160px;
+        left: 0;
+        z-index: 30;
+    
+    }
+
+    .cafe-item img {
+        width: 100%;
+        height: 250px;
+
+    }
+
+    #cafe .back3 {
+        width: 100%;
+        height: 310px;
+        position: relative;
+        top: -195px;
+        z-index: 1;
+        
+        
+    }
+
+    .cafe-text {
+        width: 95%;
+        height: 36%;
+        text-align: center;
+        position: absolute;
+        top: 260px;
+        left: 3%;
+        padding: 40px;
+        
+    }
+
+
+    .cafe-text p {
+        text-align: left;
+        font-size: 100%;
+        
+        
+    }
+    #cafe .background3 {
+        display: none;
+    }
+    
+    /*----NEWS------*/
+    #NEWS {
+        width: 100%;
+        height: 1300px;
+        position: relative;
+        top: 1755px;
+        
+    
+    
+        
+        
+    }
+
+    #NEWS .news-title {
+        width: 100%;
+        position: relative;
+        top: 0;
+        
+    }
+
+    .news-title .news {
+        font-style: normal;
+        font-size: 110%;
+        color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 2%;
+        
+         
+        
+    }
+
+    .news-title img {
+        width: 10%;
+        position: absolute;
+        left: auto;
+        right: 15px;
+        top: 20px;
+        
+       
+        
+    }
+
+
+    .news-inner {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 100px;
+        left: 0;
+        
+    }
+
+   
+    
+    
+    .news-inner .news-content1 {
+        width: 100%;
+        height: auto;
+        padding: 0 5px;
+        
+    
+    
+        
+    }
+
+
+    .news-item {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+
+
+    .news-item img {
+        width: 100%;
+        height: auto;
+        padding: 0 5px;
+        
+       
+        
+    }
+
+    
+    .news-text {
+       font-size: 10px;
+       width: 90%;
+        
+    }
+
+    .news-text p {
+        padding-top: 10px;
+        font-size: 8%;
+
+        width: 60%;
+        
+    }
+
+    .news-text .days {
+        font-size: 8%;
+        width: 60%;
+    }
+
+    .news-inner .news-content2 {
+        width: 100%;
+        height: auto;
+        padding: 0 5px;
+        margin-top: 20px;
+        position: absolute;
+        top: 535px;
+
+        
+
+    
+
+    }
+
+    .READ-MORE {
+        width: 95%;
+        height: 50px;
+        position: absolute;
+        top: 1170px;
+        left: 3%;
+        margin-top: 40px;
+        
+    }
+    
+    /*---SHOP INFORMATION---*/
+    
+    #shop-information {
+        width: 100%;
+        height: 865px;
+        position: relative;
+        top: 1745px;
+        box-sizing: border-box;
+        border: none;
+        
+                
+        
+        
+        
+    
+    }
+
+    .information-content {
+        width: 100%;
+        
+        
+    }
+    
+    .information-logo {
+        width: 69%;
+        
+        position: relative;
+        
+    }
+
+    .information-logo img {
+        width: 90%;
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 10px;
+        
+        
+        
+    }
+
+    .information-inner {
+        width: 100%;
+        height: 30px;
+        
+    
+    }
+
+    .information-title {
+        width: 35%;
+        
+    }
+
+    .information-title .shop-information {
+        font-size: 110%;
+        position: relative;
+        top: -55px;
+        left: 3%;
+        width: 50%;
+        box-sizing: border-box;
+        padding-right: 0;
+        
+        
+        
+    }
+    
+    
+    #shop-information .map {
+        width: 91%;
+        height: 400px;
+        position: relative;
+        top: 100px;
+        left: 3%;
+        z-index: 10;
+        
+        
+
+
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        z-index: 60;
+        
+    }
+
+    .information-text {
+        width: 60%;
+        height: 400px;
+        position: relative;
+        top: 350px;
+        left: 4%;
+        padding-left: 0;
+        color: #000;
+        font-weight: 400;
+        font-size: 100%;
+        
+    }
+
+    .information-text .SIGNS-PLUS {
+        font-size: 100%;
+        width: 60%;
+    }
+
+    .information-text p {
+        font-size: 90%;
+        width: 60%;
+
+    }
+
+    .information-list {
+        width: 100%;
+        position: relative;
+        top: 100px;
+        padding-left: 0;
+    
+    }
+
+    .information-list dl {
+        width: 100%;
+    }
+
+    .information-list dt {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .information-list dd {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .OFFICIAL-BLOG {
+        width: 100%;
+        height: 40px;
+        position: relative;
+        top: 660px;
+        left: -3%;
+
+    }
+
+    .OFFICIAL-BLOG .official-blog {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    
+        
+
+    }
+    
+    
+
+
+    .information-content {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        
+    }
+
+    .information-content .information-logo {
+        position: absolute;
+        width: 12%;
+        height: 83px;
+        right: 0;
+        left: auto;
+    }
+
+    .information-text {
+        position: absolute;
+        left: 4%;
+        top: 450px;
+        width: 60%;
+        height: 125px;
+        font-size: 100%;
+    }
+
+    .information-list {
+        position: absolute;
+        top: 580px;
+        left: 4%;
+        width: 39%;
+        height: 113px;
+        padding-left: 0;
+    
+    }
+
+    
+    #footer {
+        width: 100%;
+        height: 270px;
+        position: relative;
+        top: 1765px;
+        z-index: 60;
+        margin-bottom: none;
+        
+        
+       
+    }
+
+    .footer-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-item img {
+        width: 100px;
+        margin-left: 20px;
+    }
+    
+    .footer-item .sns-icon {
+        
+        width: 50%;
+        position: absolute;
+        top: 47%;
+        left: 30%;
+        padding: 0;
+    }
+
+    .sns-icon .facebook {
+        width: 30%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sns-icon .instagram {
+        height: auto;
+        width: 35%;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .sns-icon .line  {
+        width: 30%;
+        height: auto;
+        padding: 0 auto 0 0;
+        margin: 0;
+    }
+
+
+    
+
+    .sns-icon li {
+    
+        width: 100%;
+    }
+
+    .footer-item p {
+
+        font-size: 85%;
+        position: absolute;
+        top: 70%;
+        left: 33%;
+
+    }
+}
+
